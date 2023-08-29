@@ -23,7 +23,7 @@ for (let i = 0; i <= 10; i++) {
   console.log(userNumber);
 
   if (isNaN(userNumber)) { //se il valore non è un numero si interrompe il ciclo
-    alert('Hai inserito un valore non accettato,aggiorna la pagina!(Sono accettati solo numeri)');
+    alert('Hai inserito un valore non accettato,aggiorna la pagina.(Sono accettati solo numeri!)');
     break;//necessario per interrompere il ciclo
   }
   
@@ -32,4 +32,12 @@ for (let i = 0; i <= 10; i++) {
   sum += userNumber;
   console.log(sum);
 }
+//variabile per il risultato da stampare in pagina
+const risultatoEl = document.querySelector("h1");
+//console.log(risultatoEl);
+
+//stampa in pagina
+risultatoEl.textContent = `La somma dei numeri inseriti è ${sum}`;
+
+
 
